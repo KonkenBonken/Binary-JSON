@@ -1,0 +1,35 @@
+Format:
+	file extension: .kjo
+
+Object:
+  Key:
+		stringLength encoding: (1 byte)
+			0: Int8
+			1: Int16BE
+			2: Int32BE
+			3: Int64BE
+		stringLength: number of bytes
+		string: UTF-8
+  Value:
+    valueType: (1 byte)
+			0: null
+								none
+      1: string
+								stringLength encoding: (1 byte)
+									0: Int8
+									1: Int16BE
+									2: Int32BE
+									3: Int64BE
+				        stringLength: number of bytes
+				        string: UTF-8
+      2: number
+				        encoding: (1 byte)
+									0: Int8
+									1: Int16BE
+									2: Int32BE
+									3: Int64BE
+				        number
+    	3: boolean
+				        boolean (1 byte): 0 | 1
+    //  4: object
+    //  5: array

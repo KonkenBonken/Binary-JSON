@@ -1,0 +1,11 @@
+{
+  "name": "database",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module",
+  "dependencies": {
+    "is-type-of": "^1.2.1"
+  }
+}

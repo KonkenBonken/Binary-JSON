@@ -1,0 +1,26 @@
+Format:
+	file extension: .kjo
+
+Object:
+  Key:
+    nameLength: number of bytes (1 byte)
+    name: UTF-8 encoded string (max 256 bytes)
+  Value:
+    valueType: (3 bits)
+      0 000: string
+				        stringLengthLength: number of bits (1 byte)
+				        stringLength: number of bytes (max 256 bits)
+				        string: UTF-8
+      1 001: number
+				        encoding: (2 bit)
+									00: Int8LE
+									01: Int16LE
+									10: Int32LE
+									11: Int64LE
+				        number
+!     2 010: boolean
+				        boolean (1 bit)
+      3 011: null
+				        none
+    //  4 100: object
+    //  5 101: array
