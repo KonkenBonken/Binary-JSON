@@ -4,6 +4,14 @@
   "directories": {
     "lib": "lib"
   },
+  "scripts": {
+    "types": "jsdoc -c jsdoc-config.json -d ./ lib/index.js lib/parse.js lib/serialize.js"
+  },
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "jsdoc": "^3.6.10",
+    "tsd-jsdoc": "^2.5.0"
+  },
   "type": "module",
   "dependencies": {
     "is-type-of": "^1.2.1"
