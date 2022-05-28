@@ -11,7 +11,7 @@ function randomString(min = 1, max = 1024) {
 	})
 }
 
-function randomInteger(min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
+function randomInteger(min = 2 ** 31 - 1, max = 2 ** 31 - 1) {
 	return _randomInteger(min, max)
 }
 
