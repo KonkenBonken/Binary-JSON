@@ -9,7 +9,11 @@
   },
   "types": "./index.d.ts",
   "devDependencies": {
+    "crypto-random-string": "^5.0.0",
     "jsdoc": "^3.6.10",
+    "random-boolean": "^1.0.0",
+    "random-int": "^3.0.0",
+    "random-item": "^4.0.1",
     "tsd-jsdoc": "^2.5.0"
   },
   "type": "module",
